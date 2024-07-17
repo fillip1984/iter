@@ -25,7 +25,8 @@
       }
     },
     "production": {
-      "extends": "base"
+      "extends": "base",
+      "distribution": "internal"
     }
   },
   "submit": {
