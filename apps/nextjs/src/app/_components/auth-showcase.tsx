@@ -6,7 +6,7 @@ export async function AuthShowcase() {
 
   if (!session) {
     return (
-      <form>
+      <form className="flex gap-2">
         <Button
           size="lg"
           formAction={async () => {
@@ -15,6 +15,16 @@ export async function AuthShowcase() {
           }}
         >
           Sign in with Discord
+        </Button>
+
+        <Button
+          size="lg"
+          formAction={async () => {
+            "use server";
+            await signIn("github");
+          }}
+        >
+          Sign in with Github
         </Button>
       </form>
     );
