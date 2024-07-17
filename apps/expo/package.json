@@ -4,7 +4,7 @@
   "private": true,
   "main": "expo-router/entry",
   "scripts": {
-    "build": "eas build --platform ios --profile development --local --non-interactive",
+    "build-development": "eas build --platform ios --profile development --local --non-interactive",
     "build-production": "eas build --platform ios --profile production --local --non-interactive",
     "clean": "git clean -xdf .expo .turbo node_modules",
     "dev": "expo start",
